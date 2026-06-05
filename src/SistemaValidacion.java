@@ -41,6 +41,8 @@ public class SistemaValidacion {
 
             BancoDatos[TotalUsuarios] = usuario;
             TotalUsuarios++;
+
+            System.out.println("Usuario registrado existosamente");
         }catch (NombreInvalidoException n) {
             System.out.println("Error al registrar al usuario: " + n.getMessage());
         }catch(EdadInvalidaException e) {
