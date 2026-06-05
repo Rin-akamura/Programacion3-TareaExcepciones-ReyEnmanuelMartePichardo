@@ -1,6 +1,7 @@
 import java.util.Scanner;
 public class Main {
     static Scanner sc = new Scanner(System.in);
+    static SistemaValidacion usuario = new SistemaValidacion();
     public static void main(String[] args) {
         int b = 0;
 
@@ -17,6 +18,7 @@ public class Main {
 
             switch(b) {
                 case 1:
+                    usuario.RegistrarUsuario();
                     break;
                 case 2:
                     System.out.println("Saliendo del programa...");
