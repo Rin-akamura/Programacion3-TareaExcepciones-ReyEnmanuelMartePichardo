@@ -1,4 +1,5 @@
 
+import java.util.InputMismatchException;
 import java.util.Scanner; 
 public class SistemaValidacion {
     private NombreInvalidoException n = null;
@@ -51,6 +52,9 @@ public class SistemaValidacion {
             System.out.println("Error al registrar al Usuario: " + e.getMessage());
         }catch (CorreoInvalidoException c) {
             System.out.println("Error al registrar al Usuario: " + c.getMessage());
+        }catch (InputMismatchException e){
+            System.out.println("Error: Debe ingresar un numero valido");
+            scanner.nextLine();
         }catch (SalarioInvalidoException s){
             System.out.println("Error al registrar al Usuario: " + s.getMessage());
         }finally {
