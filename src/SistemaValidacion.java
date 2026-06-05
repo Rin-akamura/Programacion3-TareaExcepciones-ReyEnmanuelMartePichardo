@@ -28,13 +28,14 @@ public class SistemaValidacion {
             usuario.setEdad(Edad);
             System.out.println();
 
-            System.out.print("Ingrese su correo electronico");
+            System.out.print("Ingrese su correo electronico: ");
             String Correo = scanner.nextLine();
             usuario.setCorreo(Correo);
             System.out.println();
 
             System.out.print("Ingrese su salario mensual: ");
             double Salario = scanner.nextDouble();
+            scanner.nextLine();
             usuario.setSalario(Salario);
             System.out.println();
             ValidarUsuario(Nombre, Correo, Edad, Salario);
@@ -43,10 +44,11 @@ public class SistemaValidacion {
             TotalUsuarios++;
 
             System.out.println("Usuario registrado existosamente");
+
         }catch (NombreInvalidoException n) {
             System.out.println("Error al registrar al usuario: " + n.getMessage());
         }catch(EdadInvalidaException e) {
-            System.out.println("Error al registrar al Usuario" + e.getMessage());
+            System.out.println("Error al registrar al Usuario: " + e.getMessage());
         }catch (CorreoInvalidoException c) {
             System.out.println("Error al registrar al Usuario: " + c.getMessage());
         }catch (SalarioInvalidoException s){
