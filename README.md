@@ -16,7 +16,7 @@
 - Git y Github
 
 # Forma de ejecutar el programa
-Descargue la carpeta con los archivos que contienen el codigo fuente del programa.
-Teniendo ya el programa y ponerlo en una carpeta que utilice para trabajar, utilice el IDE de su preferencia para abrir el proyecto
-Compile el programa en su computador utilizando el comando javac Main.java (tambien puede hacerlo por el compilador y ejecutador del IDE, como por el ejemplo de Visual Studio Code) en la terminal o git bash.
-Cuando compile su programa solo debe correrlo utilizando el comando java Main.java, lo que ejecutara el programa en su terminal
+1. Descargue la carpeta con los archivos que contienen el codigo fuente del programa.
+2. Teniendo ya el programa y ponerlo en una carpeta que utilice para trabajar, utilice el IDE de su preferencia para abrir el proyecto
+3. Compile el programa en su computador utilizando el comando javac Main.java (tambien puede hacerlo por el compilador y ejecutador del IDE, como por el ejemplo de Visual Studio Code) en la terminal o git bash.
+4. Cuando compile su programa, solo debe correrlo utilizando el comando java Main, lo que ejecutara el programa en su terminal
